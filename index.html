@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Evolution of the Guitar
+  </title>
+  <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.js">
+  </script>
+  <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v3.3.0/mapbox-gl.css" rel="stylesheet"/>
+  <link href="https://use.fontawesome.com/releases/v6.7.0/css/all.css" rel="stylesheet"/>
+  <script src="https://unpkg.com/scrollama">
+  </script>
+  <style>
+   body { 
+      margin: 0; 
+      font-family: 
+      sans-serif; 
+    }
+    #map { 
+      position: fixed; 
+      top: 0; 
+      bottom: 0; 
+      width: 100%; 
+      z-index: 1; 
+      transition: width 0.6s ease, left 0.6s ease;
+    }
+    #intro-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.8);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Arial', sans-serif;
+    }
+    .modal-content {
+      background: #fff;
+      padding: 30px;
+      max-width: 500px;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+      animation: fadeIn 0.6s ease-out;
+    }
+
+    .modal-content h1 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .modal-content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    #start-button {
+      background-color: #ff6600;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+              
+    #start-button:hover {
+      background-color: #e05400;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    #story {
+      position: relative;
+      width: 35%;
+      max-width: 500px;
+      height: 100vh;
+      overflow-y: scroll;
+      background: rgba(255,255,255,0.95);
+      padding-top: 20vh;
+      padding-bottom: 20vh;
+      z-index: 2;
+      transition: transform 0.6s ease, opacity 0.6s ease
+    }
+    #map-title {
+      position: fixed;
+      top: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 4;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      font-size: 22px;
+      font-weight: bold;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+    }
+    #credits-button {
+      position: fixed;
+      top: 50px;
+      right: 10px;
+      z-index: 4;
+      background: #fff;
+      border: 2px solid #333;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      padding: 0;
+    }
+    #credits-button:hover {
+      transform: scale(1.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      transition: all 0.2s ease-in-out;
+    }
+    #credits-box {
+      position: fixed;
+      bottom: 60px;
+      right: 15px;
+      width: 250px;
+      background: #fff;
+      border: 1px solid #aaa;
+      padding: 15px;
+      border-radius: 8px;
+      z-index: 4;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      display: none;
+      font-size: 14px;
+    }
+
+    #credits-box h3 {
+      margin-top: 0;
+    }
+
+    #close-credits {
+      margin-top: 10px;
+      background: #f0f0f0;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .step {
+      margin-bottom: 50px;
+      padding: 20px;
+      border-left: 4px solid #333;
+      background: #fff;
+    }
+    .step h2 { margin-top: 0; }
+    iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    #toggle-button {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 3;
+      background: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    #credits-button {
+      transition: all 0.2s ease-in-out; /* ensures smooth effect */
+    }
+    .story-hidden {
+      transform: translateX(-100%);
+      opacity: 0;
+      pointer-events: none;
+    }
+  </style>
+ </head>
+ <body>
+  <div id="intro-modal">
+   <div class="modal-content">
+    <h1>
+     The Guitar Throughout History
+    </h1>
+    <p>
+     The guitar has seen many shapes through history. Scroll through the instruments on the left or explore the map and find other instruments!
+    </p>
+    <button id="start-button">
+     Lets Go!
+    </button>
+   </div>
+  </div>
+  <div id="map">
+  </div>
+  <div id="map-title">
+   Evolution of the Guitar
+  </div>
+  <div id="credits-button">
+   <i class="fa-solid fa-circle-exclamation">
+   </i>
+  </div>
+  <div id="credits-box">
+   <h3>
+    Credits &amp; Attribution
+   </h3>
+   <p>
+    Created by Edgar Castillo-Ramos
+   </p>
+   <p>
+    Data sources: Custom GeoJSON with historical guitar data
+   </p>
+   <p>
+    Mapbox Studio for base map
+   </p>
+   <p>
+    Embedded YouTube content courtesy of respective creators
+   </p>
+   <button id="close-credits">
+    Close
+   </button>
+  </div>
+  <div id="toggle-button">
+   Switch to Interactive
+  </div>
+  <div id="story">
+  </div>
+  <script>
+   mapboxgl.accessToken = 'pk.eyJ1IjoiY2FzdGlsbG9yYW1vcyIsImEiOiJjbThnNWVydmkwajc3Mm1vOWZ4ejdscGtxIn0.Jf1dO3iPrTn-fqpu9GKehw';
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/castilloramos/cm9rc29hz00mg01rw0qb705q4',
+      center: [-98.486252, 29.425901],
+      zoom: 3
+    });
+
+    
+    const storyContainer = document.getElementById('story');
+
+    fetch('assets/guitar_evolution.geojson')
+      .then(res => res.json())
+      .then(data => {
+
+        map.on('load', () => {
+        
+  // Add source
+  map.addSource('instruments', {
+    type: 'geojson',
+    data: data
+  });
+
+  
+  const iconNames = [...new Set(data.features.map(f => f.properties.icon))];
+
+  
+  Promise.all(
+    iconNames.map(name =>
+      new Promise((resolve, reject) => {
+        map.loadImage(`assets/${name}.png`, (error, image) => {
+          if (error) {
+            console.error(`Error loading image for icon: ${name}`);
+            reject(error);
+            return;
+          }
+          if (!map.hasImage(name)) {
+            map.addImage(name, image);
+          }
+          resolve();
+        });
+      })
+    )
+  ).then(() => {
+    
+
+    // why did I make this with dynamic icons
+    map.addLayer({
+      id: 'instrument-points',
+      type: 'symbol',
+      source: 'instruments',
+      layout: {
+        'icon-image': ['get', 'icon'],  
+        'icon-size': 0.07,
+        'icon-allow-overlap': true
+      }
+    });
+  }).catch(err => console.error("Error loading one or more icons:", err));
+});
+
+
+
+   // Scroll only through selected points
+   const featuredInstruments = data.features.filter(f => f.properties.feature);
+
+featuredInstruments.forEach((feature, index) => {
+  const step = document.createElement('div');
+  step.className = 'step';
+  step.setAttribute('data-index', index);
+
+  const title = document.createElement('h2');
+  title.textContent = feature.properties.name;
+
+  const desc = document.createElement('p');
+  desc.textContent = feature.properties.description;
+
+  const iframe = document.createElement('iframe');
+  iframe.src = feature.properties.youtube;
+
+  step.appendChild(title);
+  step.appendChild(desc);
+  step.appendChild(iframe);
+  storyContainer.appendChild(step);
+});
+
+
+const scroller = scrollama();
+
+scroller.setup({
+  step: '.step',
+  offset: 0.5
+}).onStepEnter(response => {
+  const idx = +response.element.getAttribute('data-index');
+  const coords = featuredInstruments[idx].geometry.coordinates;
+  map.flyTo({ center: coords, zoom: 5 });
+});
+});
+
+
+  let interactiveMode = false;
+
+
+
+document.getElementById('toggle-button').addEventListener('click', () => {
+  interactiveMode = !interactiveMode;
+
+  const storyEl = document.getElementById('story');
+  const mapEl = document.getElementById('map');
+  const toggleBtn = document.getElementById('toggle-button');
+
+  if (interactiveMode) {
+    // Switch to interactive mode
+    storyEl.classList.add('story-hidden');
+    toggleBtn.innerText = 'Switch to Story Mode';
+    // Enable clicking on points
+    map.on('click', 'instrument-points', onPointClick);
+
+    // Change cursor to pointer
+    map.on('mouseenter', 'instrument-points', () => {
+      map.getCanvas().style.cursor = 'pointer';
+    });
+    map.on('mouseleave', 'instrument-points', () => {
+      map.getCanvas().style.cursor = '';
+    });
+
+    
+    } else {
+    // Switch back to story mode
+      storyEl.classList.remove('story-hidden');
+      toggleBtn.innerText = 'Switch to Interactive';
+
+
+    // Remove click handlers for points
+    map.off('click', 'instrument-points', onPointClick);
+    map.off('mouseenter', 'instrument-points');
+    map.off('mouseleave', 'instrument-points');
+
+  
+  }
+});
+
+// Popups for interactive mode
+function onPointClick(e) {
+  const feature = e.features[0];
+  const coordinates = feature.geometry.coordinates.slice();
+  const name = feature.properties.name;
+  const youtube = feature.properties.youtube;
+  const description = feature.properties.description;
+
+  new mapboxgl.Popup()
+    .setLngLat(coordinates)
+    .setHTML(`
+      <h3>${name}</h3>
+      <p>${description}</p>
+      <iframe width="100%" height="200" src="${youtube}" frameborder="0" allowfullscreen></iframe>
+    `)
+    .addTo(map);
+}
+
+
+document.getElementById('credits-button').addEventListener('click', () => {
+  document.getElementById('credits-box').style.display = 'block';
+});
+
+document.getElementById('close-credits').addEventListener('click', () => {
+  document.getElementById('credits-box').style.display = 'none';
+});
+
+document.getElementById('start-button').addEventListener('click', () => {
+  document.getElementById('intro-modal').style.display = 'none';
+});
+  </script>
+ </body>
+</html>
