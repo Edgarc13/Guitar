@@ -7,7 +7,7 @@
           "name": "Arabic Oud",
           "icon": "oud",
           "feature": true, 
-          "description": " Originating in the Middle East, this pear shaped isntrument is the king of Arabian music. The fretless construction means that the Oud is able to play mircrotones - notes that exist between the 12 notes in our musical scale!",
+          "description": " Originating in the Middle East, this pear-shaped instrument is the king of Arabian music. The fretless construction means that the Oud can play microtones - notes that exist between the 12 notes in our musical scale!",
           "youtube": "HTTPS://www.youtube.com/embed/osf1gckzf70?si=pna1O7m0gb4L_W8q"
         },
         "geometry": {
@@ -21,7 +21,7 @@
           "name": "Lute",
           "icon": "lute",
           "feature": true, 
-          "description": "The first evolution, the lute is a storied instrument that is thought to originate in Egypt. The lute's warm sound and versatility make it a popular choice for composer till this day. The lute family is expansive with lutes coming in different sizes and with differing amounts of strings. The evolution of the lute can be a map in it of it self! ",
+          "description": "The first evolution, the lute is a storied instrument thought to originate in Egypt. The lute's warm sound and versatility make it a popular choice for composers to this day. The lute family is expansive, with lutes coming in different sizes and with differing numbers of strings. The evolution of the lute can be a map in itself! ",
           "youtube": "https://www.youtube.com/embed/PptQJv4wxdg?si=q4f2gL8g-JHU38B2"
         },
         "geometry": {
@@ -35,7 +35,7 @@
           "name": "Vihuela (Spain)",
           "icon": "vihuela",
           "feature": true, 
-          "description": "Popping up in the 1500s, the vihuela starts to appear like a modern day guitar. It is palyed in a similar fashion as contemporary classical guitars. Modern day vihuelas are used in Mexico for mariachi music where it's distinctive punch allows it to be heard over the mariachi!",
+          "description": "Popping up in the 1500s, the vihuela starts to appear like a modern-day guitar. It is played similarly to contemporary classical guitars. Modern day vihuelas are used in Mexico for mariachi music where their distinctive punch allows it to be heard over the mariachi!",
           "youtube": "https://www.youtube.com/embed/duHMeCndpjo?si=yBo9UFWtMQc_EwQi"
         },
         "geometry": {
@@ -49,7 +49,7 @@
           "name": "Baroque Guitar",
           "icon": "spanish-guitar",
           "feature": true, 
-          "description": "Replacing the vihuela, the baroque guitar was popular until 1750. Usually made with 5 strings that were doubled and often utilized as accompaniment instrument with the ability to play beautiful melodies.",
+          "description": "Replacing the vihuela, the baroque guitar was popular until 1750. Usually made with 5 strings that were doubled and often utilized as an accompaniment instrument with the ability to play beautiful melodies.",
           "youtube": "https://www.youtube.com/embed/3P6nsozwTTo?si=jmWI1JUiL5NCWsv7"
         },
         "geometry": {
@@ -63,7 +63,7 @@
           "name": "19th Century Classical Guitar",
           "icon": "spanish-guitar",
           "feature": true, 
-          "description": "The first 'modern' guitar. Stylings of Francesgo Tarrego lend this guitar to romantics. Modern fingerstyle technique was developed on this instrument. Played in a 'pizicato' or 'rasgueado' style - a.k.a fingerstyle or strumming. The strings for this instrument was made out of gut skin!",
+          "description": "The first 'modern' guitar. Stylings of Francesgo Tarrego lend this guitar to romantics. Modern fingerstyle technique was developed on this instrument. Played in a 'pizicato' or 'rasgueado' style - a.k.a fingerstyle or strumming. The strings for this instrument were made out of gut skin!",
           "youtube": "https://www.youtube.com/embed/cS_GCDAEdfI?si=G9_TRqfitVpWhcah"
         },
         "geometry": {
@@ -77,7 +77,7 @@
           "name": "Resonator Guitar",
           "icon": "spanish-guitar",
           "feature": false, 
-          "description": "Guitarists often are self conscious about not being heard especially when playing with other instruments. The resonator guitar was built to be played alongside horns. Metal cones are placed on the body to give it a distinct loud sound. Often played in a slide style in blues or bluegrass this instrument also goes by the name of 'dobro'. ",
+          "description": "Guitarists often are self-conscious about not being heard especially when playing with other instruments. The resonator guitar was built to be played alongside horns. Metal cones are placed on the body to give it a distinct, loud sound. Often played in a slide style in blues or bluegrass, this instrument also goes by the name of 'dobro'. ",
           "youtube": "https://www.youtube.com/embed/J46sRuj99Cw?si=N7GvXQkKWYccJKzb"
         },
         "geometry": {
@@ -91,7 +91,7 @@
           "name": "Steel String Acoustic",
           "icon": "spanish-guitar",
           "feature": true, 
-          "description": "The quintessential guitar. Always a joy to be seen at a party. The steel string was made to brighten up the sound of classical guitars. They can in many shapes from small parlor guitars to large dreadnoughts. The steel string can play anything from folk, rock, pop, blues and even jazz",
+          "description": "The quintessential guitar. Always a joy to be seen at a party. The steel string was made to brighten up the sound of classical guitars. They can come in many shapes, from small parlor guitars to large dreadnoughts. The steel string can play anything from folk, rock, pop, blues, and even jazz",
           "youtube": "https://www.youtube.com/embed/XyY4LNkxOW0?si=2gOsphSScDjRsDeL"
         },
         "geometry": {
@@ -105,7 +105,7 @@
           "name": "12-String Guitar (Mexico)",
           "icon": "spanish-guitar",
           "feature": true, 
-          "description": "While origins of this guitar is unclear it is believed to have originated in Mexico in teh 19th century. Each string is doubled with the bottom 4 strings having an extra string that is an octave up. The extra sing gives this guitar a brighter and more harmonically rich sound. This guitar is often used by regional Mexican artists in the north.",
+          "description": "While the origins of this guitar are unclear, it is believed to have originated in Mexico in the 19th century. Each string is doubled, with the bottom 4 strings having an extra string that is an octave up. The extra string gives this guitar a brighter and more harmonically rich sound. This guitar is often used by regional Mexican artists in the north.",
           "youtube": "https://www.youtube.com/embed/cFG7GidIs14?si=9dS5UIrIdFiEipkK"
         }
       },
@@ -115,7 +115,7 @@
           "name": "Nylon String Classical",
           "icon": "spanish-guitar",
           "feature": false, 
-          "description": "The nylon string guitar was introduced after WW2. If the usage of turtle shells for picks is not easy to talk about then gut strings may be a topic for another day. This was developed as a louder alternative for gut string guitars. ",
+          "description": "The nylon string guitar was introduced after WW2. If the usage of turtle shells for picks is not easy to talk about, then gut strings may be a topic for another day. This was developed as a louder alternative to gut-string guitars. ",
           "youtube": "https://www.youtube.com/embed/inBKFMB-yPg?si=UTlO8ZM5kfPaPifj"
         },
         "geometry": {
@@ -129,7 +129,7 @@
           "name": "The Log",
           "icon": "electric-guitar",
           "feature": true, 
-          "description": "While hollow body electrics were already being made they had the issues of extreme feedback. Les Paul (yes that Les Paul) created the first solid body guitar called The Log. Using  4x4 and two pieces of a hollow body plus some electronics gets you this vital piece of guitar history. ",
+          "description": "While hollow body electrics were already being made, they had the issue of extreme feedback. Les Paul (yes, that Les Paul) created the first solid body guitar called The Log. Using  4x4 and two pieces of a hollow body, plus some electronics, gets you this vital piece of guitar history. ",
           "youtube": "https://www.youtube.com/embed/36ECSlBDDRA?si=gnQXqqpw1PHCxNVf"
         },
         "geometry": {
@@ -143,7 +143,7 @@
           "name": "Stratocaster",
           "icon": "electric-guitar",
           "feature": true, 
-          "description": "When you think of a rock or pop star you proabably think of them playing this. Designed in 1954 by Leo Fender, the stratocaster is THE guitar. The three pickups make it versatile for any kind of music you want to play. Rock, funk and yes even metal can be played on a strat making it essential for any gigging musician.",
+          "description": "When you think of a rock or pop star, you probably think of them playing this. Designed in 1954 by Leo Fender, the Stratocaster is THE guitar. The three pickups make it versatile for any kind of music you want to play. Rock, funk, and ye,s even metal can be played on a ,Strat making it essential for any gigging musician.",
           "youtube": "https://www.youtube.com/embed/ru_mlNYjBOU?si=gop3xQM2hc3nIIiq"
         },
         "geometry": {
@@ -158,7 +158,7 @@
           "name": "Masayoshi Takanaka’s Surfboard Guitar",
           "icon": "electric-guitar",
           "feature": false, 
-          "description": "Born in 2003, this guitar is indeed made out of a real surfboard. Takanaka's sweet city pop/fusion style combined with this excentric guitar made it a show stopper at live shows.",
+          "description": "Born in 2003, this guitar is indeed made out of a real surfboard. Takanaka's sweet city pop/fusion style combined with this eccentric guitar made it a show stopper at live shows.",
           "youtube": "https://www.youtube.com/embed/cTDK5Bluh5A?si=273GGyg98YBMw7wh"
         },
         "geometry": {
@@ -172,7 +172,7 @@
           "name": "Tololoche",
           "icon": "double-bass",
           "feature": false, 
-          "description": "While not a guitar the tololoche is a unique Mexican instrument. Developed independenantly of the upright bass. Modern corrido artists use this bass in similar manner to bluegrass bass players.",
+          "description": "While not a guitar, the tololoche is a unique Mexican instrument. Developed independently of the upright bass. Modern corrido artists similarly use this bass to bluegrass bass players.",
           "youtube": "https://www.youtube.com/embed/_mu45bp8fOI?si=Dt4mWqiWjPfFLWgx"
         },
         "geometry": {
@@ -186,7 +186,7 @@
           "name": "Vihuela (Mexico)",
           "icon": "vihuela",
           "feature": false, 
-          "description": "Similar to the Spanish vihuela. The Mexican vihuela is a small guitar used for accompaniment. Often used alongside the nylon string guitars and requinto guitars the vihuela's small size allows to punch through mariachi horns!",
+          "description": "Similar to the Spanish vihuela. The Mexican vihuela is a small guitar used for accompaniment. Often used alongside the nylon string guitars and requinto guitars, the vihuela's small size allows it to punch through mariachi horns!",
           "youtube": "https://www.youtube.com/embed/7SVCsqs3Vsc?si=pOCxnZw0K-pYW4pi"
         },
         "geometry": {
@@ -200,7 +200,7 @@
           "name": "Lap Steel Guitar",
           "icon": "lap-steel",
           "feature": true, 
-          "description": "Hawaii's own. The lap steel guitar is palyed horizontally and with a slide in a similar fashion to that of the resonator. The clean electric nature coupled with controlled slides gives this instrument that iconic tropical feel",
+          "description": "Hawaii's own. The lap steel guitar is played horizontally and with a slide in a similar fashion to that of the resonator. The clean electric nature coupled with controlled slides gives this instrument that iconic tropical feel",
           "youtube": "https://www.youtube.com/embed/lj2bT14g0Gc?si=dG6-p11bYzICeyYR"
         },
         "geometry": {
@@ -214,7 +214,7 @@
           "name": "Archtop Guitar",
           "icon": "spanish-guitar",
           "feature": true, 
-          "description": "Favored by jazz guitarists. The archtop is a steel string with an arched top - like a violin. This made the G and D strings sit higher than the other strings allowing them to have more punch. Freddy Green of the Count Basie Big Band used archtops to play through the band.",
+          "description": "Favored by jazz guitarists. The archtop is a steel string with an arched top, like a violin. This made the G and D strings sit higher than the other strings,allowing them to have more punch. Freddy Green of the Count Basie Big Band used archtops to play through the band.",
           "youtube": "https://www.youtube.com/embed/veUuZrn1rgs?si=xQbKFrhrdO_ai1Js"
         },
         "geometry": {
@@ -228,7 +228,7 @@
           "name": "Baritone Guitar",
           "icon": "electric-guitar",
           "feature": true, 
-          "description": "SItting between the bass and the guitar the baritone guitar fulfilles a small niche in music. Often utilzied for western scores or country music the baritone guitar is useful for those low notes when you don't want to deal with a bass player.",
+          "description": "Sitting between the bass and the guitar, the baritone guitar fills a small niche in music. Often utilized for western scores or country music, the baritone guitar is useful for those low notes when you don't want to deal with a bass player.",
           "youtube": "https://www.youtube.com/embed/pMOp_V-sD8g?si=aBYsiUx8ZjTQxsVv"
         },
         "geometry": {
@@ -242,7 +242,7 @@
           "name": "Requinto (Mexico)",
           "icon": "spanish-guitar",
           "feature": false, 
-          "description": "The requinto is a smaller, higher pitched guitar. It was used during Mexico's golden age where boleros and guitar trios dominated the radio. The small size suited it for fast playing.",
+          "description": "The requinto is a smaller, higher-pitched guitar. It was used during Mexico's golden age, when boleros and guitar trios dominated the radio. The small size suited it for fast playing.",
           "youtube": "https://www.youtube.com/embed/ilkG4-B5Xik?si=JRQ_myFSjf0-axXL"
         },
         "geometry": {
@@ -256,7 +256,7 @@
           "name": "7-String Guitar",
           "icon": "electric-guitar",
           "feature": true, 
-          "description": "Guitars have always have an extended range version of them with lutes having up to 19. Nowadays the 7 string is mainly for metal when you really do not want spend extra money on a bass player.",
+          "description": "Guitars have always had an extended range version of them, with lutes having up to 19. Nowadays, the 7 string is mainly for metal when you do not want to spend extra money on a bass player.",
           "youtube": "https://www.youtube.com/embed/o7pwdBqj-WQ?si=4LOjA0iqeBUpKnZF"
         },
         "geometry": {
